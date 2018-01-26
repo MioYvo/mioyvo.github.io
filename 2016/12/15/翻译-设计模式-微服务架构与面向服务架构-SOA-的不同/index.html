@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -82,7 +82,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '6.0.2',
     sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -117,7 +117,7 @@
 <meta property="og:url" content="http://allaboutmio.top/2016/12/15/翻译-设计模式-微服务架构与面向服务架构-SOA-的不同/index.html">
 <meta property="og:site_name" content="All About Mio">
 <meta property="og:description" content="原文链接 问题我研究过微服务架构，尝试找出它与SOA(服务分离并独立部署)的不同。谁能告诉我它们的区别，还有微服务的优劣？ 回答(投票第一)我想你可以把微服务的架构风格看成SOA的一种特例。一个普遍被接受的观点(维基百科 面向服务)是，所有的SOA满足四点：  界限明确 服务独立自主 服务间共享schema和协议，而不是共享类 服务的兼容性是基于策略- Don Box, Microsoft (pr">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2018-01-26T08:54:53.945Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[翻译] 设计模式-微服务架构与面向服务架构(SOA)的不同">
@@ -171,7 +171,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -216,25 +216,27 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Accueil</a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
         </li>
       
         
-        <li class="menu-item menu-item-关于我">
+        <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
         </li>
       
         
-        <li class="menu-item menu-item-标签">
+        <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">4</span>
+              </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">2</span>
+              </a>
         </li>
       
 
@@ -283,7 +285,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mio Lau">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://bolg-1252323622.cos.ap-chengdu.myqcloud.com/p470981086.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -305,7 +307,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-15T14:01:00+08:00">2016-12-15</time>
             
@@ -460,10 +462,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table Des Matières
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Ensemble
+            Overview
           </li>
         </ul>
       
@@ -471,6 +473,10 @@
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://bolg-1252323622.cos.ap-chengdu.myqcloud.com/p470981086.jpg"
+                alt="Mio Lau" />
             
               <p class="site-author-name" itemprop="name">Mio Lau</p>
               <p class="site-description motion-element" itemprop="description">Sans toi les émotions d'aujourd'hui ne seraient que la peau morte des émotions d'autrefois.此去经年，应是良辰美景虚设。便纵有千种风情，更与何人说？</p>
@@ -484,7 +490,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">articles</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -516,6 +522,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/MioYvo" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:liurusi.101@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -584,7 +606,7 @@
 
 
 
-  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.2</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.2</div>
 
 
 
@@ -672,6 +694,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.2"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
