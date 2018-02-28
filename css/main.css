@@ -1815,7 +1815,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9e7eff;
+  background: #8a9f86;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2942,10 +2942,11 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("https://source.unsplash.com/jR4Zf-riEjI/1920x1080");
+  background-color: #8fb1ba;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
+  background-size: cover;
 }
 article.post.post-type-normal {
   width: 90%;
