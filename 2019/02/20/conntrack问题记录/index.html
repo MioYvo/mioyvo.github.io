@@ -108,28 +108,27 @@
 
 
 
-  <meta name="description" content="杭州–三亚，22天，5500km辞去工作，骑上摩托，向着赤道和大海的方向，旅行">
-<meta name="keywords" content="摩旅">
+  <meta name="description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
+<meta name="keywords" content="Linux,运维">
 <meta property="og:type" content="article">
-<meta property="og:title" content="摩旅--海南行">
-<meta property="og:url" content="http://allaboutmio.top/2018/12/03/摩旅-海南行/index.html">
+<meta property="og:title" content="conntrack问题记录">
+<meta property="og:url" content="http://allaboutmio.top/2019/02/20/conntrack问题记录/index.html">
 <meta property="og:site_name" content="All About Mio">
-<meta property="og:description" content="杭州–三亚，22天，5500km辞去工作，骑上摩托，向着赤道和大海的方向，旅行">
+<meta property="og:description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fxtyd5ozd9g30ge0gn4qr.gif">
-<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwgy1fxtx1zi31fg30gn0e6kjx.gif">
-<meta property="og:updated_time" content="2018-12-03T15:09:53.968Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1g0cqh2orj6j30dq0c5mx4.jpg">
+<meta property="og:updated_time" content="2019-02-20T03:35:34.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="摩旅--海南行">
-<meta name="twitter:description" content="杭州–三亚，22天，5500km辞去工作，骑上摩托，向着赤道和大海的方向，旅行">
-<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNbRwgy1fxtyd5ozd9g30ge0gn4qr.gif">
+<meta name="twitter:title" content="conntrack问题记录">
+<meta name="twitter:description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1g0cqh2orj6j30dq0c5mx4.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://allaboutmio.top/2018/12/03/摩旅-海南行/"/>
+  <link rel="canonical" href="http://allaboutmio.top/2019/02/20/conntrack问题记录/"/>
 
 
 
@@ -139,7 +138,7 @@
   };
 </script>
 
-  <title>摩旅--海南行 | All About Mio</title>
+  <title>conntrack问题记录 | All About Mio</title>
   
 
 
@@ -342,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://allaboutmio.top/2018/12/03/摩旅-海南行/">
+    <link itemprop="mainEntityOfPage" href="http://allaboutmio.top/2019/02/20/conntrack问题记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mio Lau">
@@ -359,7 +358,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">摩旅--海南行
+          <h1 class="post-title" itemprop="name headline">conntrack问题记录
               
             
           </h1>
@@ -384,7 +383,7 @@
                 
               
 
-              <time title="创建时间：2018-12-03 21:52:57" itemprop="dateCreated datePublished" datetime="2018-12-03T21:52:57+08:00">2018-12-03</time>
+              <time title="创建时间：2019-02-20 10:54:21" itemprop="dateCreated datePublished" datetime="2019-02-20T10:54:21+08:00">2019-02-20</time>
             
 
             
@@ -418,15 +417,57 @@
       
 
       
-        <p>杭州–三亚，22天，5500km<br>辞去工作，骑上摩托，向着赤道和大海的方向，旅行<br><a id="more"></a></p>
-<h1 id="去程"><a href="#去程" class="headerlink" title="去程"></a>去程</h1><blockquote>
-<p>2018-11-10 ~ 11-21</p>
-</blockquote>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fxtyd5ozd9g30ge0gn4qr.gif" alt="去程"></p>
-<h1 id="返程"><a href="#返程" class="headerlink" title="返程"></a>返程</h1><blockquote>
-<p>2018-11-24 ~ 12-01</p>
-</blockquote>
-<p><img src="https://ws3.sinaimg.cn/large/006tNbRwgy1fxtx1zi31fg30gn0e6kjx.gif" alt="回程"></p>
+        <h1 id="记录一次nf-conntrack引发的服务器异常"><a href="#记录一次nf-conntrack引发的服务器异常" class="headerlink" title="记录一次nf_conntrack引发的服务器异常"></a>记录一次nf_conntrack引发的服务器异常</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报<code>operation not permitted</code>，但用户是root，百思不得其解。</p>
+<p>查看syslog发现大量报<code>nf_conntrack:table full, dropping packet</code>，询问得知前几天服务器被攻击过，于是上网找办法，查了一圈，现在已解决，总结并记录一下。<br><a id="more"></a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://testerhome.com/topics/15824" target="_blank" rel="noopener">https://testerhome.com/topics/15824</a></li>
+<li><a href="https://blog.csdn.net/dog250/article/details/9373715" target="_blank" rel="noopener">https://blog.csdn.net/dog250/article/details/9373715</a></li>
+<li><a href="https://security.stackexchange.com/questions/43205/nf-conntrack-table-full-dropping-packet" target="_blank" rel="noopener">https://security.stackexchange.com/questions/43205/nf-conntrack-table-full-dropping-packet</a></li>
+</ul>
+<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>内核中有个conntrack模块，会跟踪所有网络连接，记录存在一个哈希表中，如果服务器比较繁忙，新连接进来的速度远高于释放的速度，把哈希表塞满了，新连接的数据包就会被丢掉。如果有人 DDoS 攻击的话情况更糟，无论是空连接攻击还是简单地用短连接发大量请求都能轻易塞满哈希表。</p>
+<h2 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h2><ul>
+<li><p>查看netfilter 相关内核参数</p>
+<p>  <code>sysctl -a | grep conntrack</code></p>
+<p>  旧配置：<br>  <img src="https://ws1.sinaimg.cn/large/006tKfTcgy1g0cqh2orj6j30dq0c5mx4.jpg" alt="旧记录"></p>
+<ul>
+<li><p><code>nf_conntrack_max</code> 的默认值算法为</p>
+<p>  <code>CONNTRACK_MAX = RAMSIZE (in bytes) / 16384 / (ARCH / 32)</code><br>  其中 ARCH 为 CPU 架构，值为 32 或 64。<br>  这台机器的内存只有481M，<code>481*1024*1024/16384/(64/32)=15392</code></p>
+</li>
+<li><p><code>nf_conntrack_buckets</code> 默认值算法为</p>
+<p>  <code>HASHSIZE = CONNTRACK_MAX / 4</code></p>
+</li>
+<li><p><code>net.netfilter.nf_conntrack_tcp_timeout_established</code>：432000 （5天，默认值）</p>
+<ul>
+<li>这个值对应的场景是 “双方建立了连接后一直不发包，直到 5 天后才发” ……</li>
+<li>查询过<code>sysctl -a | grep net.ipv4</code>，keep-alive 超时时间只有 18 小时多一点（<code>net.ipv4.tcp_keepalive_time</code> + <code>net.ipv4.tcp_keepalive_intvl</code> * <code>net.ipv4.tcp_keepalive_probes</code>），由于超时关 socket 不发包，conntrack 无法根据包头的标识知道状态的变化，记录会一直处于 ESTABLISHED 状态，直到 5 天后倒计时结束才删掉。</li>
+<li>空连接攻击的最佳目标。攻击者把 IP 包头的源地址改成随机 IP，握完手就关 socket，用一台机发请求就能把你的哈希表填满。</li>
+</ul>
+</li>
+<li><p><code>net.netfilter.nf_conntrack_tcp_timeout_syn_recv</code>：60 （默认）</p>
+<p>  类似，故意不发握手的 ACK 即可。但这个超时时间没那么夸张，系统也有 syn cookie 机制来缓解 syn flood 攻击。</p>
+</li>
+<li><p><code>net.netfilter.nf_conntrack_tcp_timeout_syn_sent</code>：120 （默认）</p>
+<ul>
+<li>程序的连接超时时间，120秒对于普通服务器来说太长了</li>
+</ul>
+</li>
+<li><code>net.netfilter.nf_conntrack_tcp_timeout_fin_wait</code>: 120 （默认）<ul>
+<li><code>net.ipv4.tcp_fin_timeout</code> 默认 60 秒</li>
+</ul>
+</li>
+<li><code>net.netfilter.nf_conntrack_icmp_timeout</code>: 30 （默认）<ul>
+<li>ping超时时间，30秒太长了</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>解决方法最粗暴的是直接关掉防火墙或者在iptables里设置不跟踪某些协议的连接，但这在经常遭受攻击的生产服务器中显然是不现实的。但直接加大nf_conntrack的最大数量和哈希表大小会增大内存的使用影响服务。故调整conntrack参数，来尽量避免攻击带来的影响。</p>
+<p>参考 <a href="https://forum.mikrotik.com/viewtopic.php?t=85039" target="_blank" rel="noopener">某路由器公司的配置</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.netfilter.nf_conntrack_icmp_timeout=10</span><br><span class="line"></span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_syn_recv=5</span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_syn_sent=5</span><br><span class="line"></span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_established=600</span><br><span class="line"></span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_fin_wait=10</span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_time_wait=10</span><br><span class="line"></span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_close_wait=10</span><br><span class="line">sysctl net.netfilter.nf_conntrack_tcp_timeout_last_ack=10</span><br></pre></td></tr></table></figure>
+<p>改过后观察了一下，主程序和v2ray都没有问题，写入配置文件<code>/etc/sysctl.d/90-conntrack.conf</code>随机器启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">net.netfilter.nf_conntrack_max=1048576</span><br><span class="line"></span><br><span class="line">net.netfilter.nf_conntrack_icmp_timeout=10</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_syn_recv=5</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_syn_sent=5</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_established=600</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_fin_wait=10</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_time_wait=10</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_close_wait=10</span><br><span class="line">net.netfilter.nf_conntrack_tcp_timeout_last_ack=10</span><br></pre></td></tr></table></figure>
+<p>应用文件中的配置<br><code>sysctl -p /etc/sysctl.d/90-conntrack.conf</code></p>
 
       
     </div>
@@ -450,7 +491,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/摩旅/" rel="tag"># 摩旅</a>
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/运维/" rel="tag"># 运维</a>
           
         </div>
       
@@ -463,8 +506,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/03/摩旅-最需要带的物品/" rel="next" title="摩旅--最需要带的物品">
-                <i class="fa fa-chevron-left"></i> 摩旅--最需要带的物品
+              <a href="/2018/12/04/每一次出发都是为了又一次归来/" rel="next" title="每一次出发都是为了又一次归来">
+                <i class="fa fa-chevron-left"></i> 每一次出发都是为了又一次归来
               </a>
             
           </div>
@@ -472,10 +515,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/04/每一次出发都是为了又一次归来/" rel="prev" title="每一次出发都是为了又一次归来">
-                每一次出发都是为了又一次归来 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -644,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#去程"><span class="nav-number">1.</span> <span class="nav-text">去程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#返程"><span class="nav-number">2.</span> <span class="nav-text">返程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#记录一次nf-conntrack引发的服务器异常"><span class="nav-number">1.</span> <span class="nav-text">记录一次nf_conntrack引发的服务器异常</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#起因"><span class="nav-number">1.1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.2.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前情提要"><span class="nav-number">1.3.</span> <span class="nav-text">前情提要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查"><span class="nav-number">1.4.</span> <span class="nav-text">检查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决"><span class="nav-number">1.5.</span> <span class="nav-text">解决</span></a></li></ol></li></ol></div>
             
 
           </div>
