@@ -1850,7 +1850,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4e28cd;
+  background: #67ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3134,6 +3134,5 @@ ul.breadcrumb li+li:last-child {
 body {
   background: url("https://source.unsplash.com/MO695Hfc0j0");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
