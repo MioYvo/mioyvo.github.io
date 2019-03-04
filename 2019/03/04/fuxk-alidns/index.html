@@ -108,21 +108,21 @@
 
 
 
-  <meta name="description" content="Fuxk 阿里DNSStory　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
+  <meta name="description" content="Story　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
 <meta name="keywords" content="dns">
 <meta property="og:type" content="article">
 <meta property="og:title" content="FUXK 阿里DNS">
 <meta property="og:url" content="http://allaboutmio.top/2019/03/04/fuxk-alidns/index.html">
 <meta property="og:site_name" content="All About Mio">
-<meta property="og:description" content="Fuxk 阿里DNSStory　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
+<meta property="og:description" content="Story　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://allaboutmio.top/2019/03/04/fuxk-alidns/Jietu20190304-192113@2x.jpg">
 <meta property="og:image" content="http://allaboutmio.top/2019/03/04/fuxk-alidns/Jietu20190304-194355@2x.jpg">
 <meta property="og:image" content="http://allaboutmio.top/2019/03/04/fuxk-alidns/Jietu20190304-194530@2x.jpg">
-<meta property="og:updated_time" content="2019-03-04T12:34:17.381Z">
+<meta property="og:updated_time" content="2019-03-04T12:36:13.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FUXK 阿里DNS">
-<meta name="twitter:description" content="Fuxk 阿里DNSStory　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
+<meta name="twitter:description" content="Story　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。">
 <meta name="twitter:image" content="http://allaboutmio.top/2019/03/04/fuxk-alidns/Jietu20190304-192113@2x.jpg">
 
 
@@ -419,7 +419,7 @@
       
 
       
-        <h1 id="Fuxk-阿里DNS"><a href="#Fuxk-阿里DNS" class="headerlink" title="Fuxk 阿里DNS"></a>Fuxk 阿里DNS</h1><h2 id="Story"><a href="#Story" class="headerlink" title="Story"></a>Story</h2><p>　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。<br>　<a id="more"></a><br>　今天看到DoH（DNS over HTTPS）在Firefox（FF）得到支持得新闻，想起前几天调研Rust的时候提到Mozilla已经把FF核心从C++切换到RUST，据说性能很好？于是心血来潮装了一个Firefox Quantum。<br>　装好FF后，打开西贝斗鱼等网站，没感觉加载比Chrome多快，打开默认的DoH的，FF提供了一个Cloudflare的DoH Resolver（ <a href="https://cloudflare-dns.com/dns-query" target="_blank" rel="noopener">https://cloudflare-dns.com/dns-query</a> ），再测试一通发现B站的速度还是老样子甚至更差，谷歌了一下，发现FF提供了一个<code>about:networking</code>的小工具，可以查看很多网络相关的信息，其中的DNS一栏可以查看到DNS的host缓存，非常方便好用。<br>　<img src="Jietu20190304-192113@2x.jpg" alt><br>　打开调试窗口看到B站的CDN用的地址之一是<code>s1.hdslb.com</code>，在<code>about:networking</code>中找到缓存的ip地址并不是杭州的，打开DoH切换了Cloudflare和<a href="https://dns.rubyfish.cn/dns-query" target="_blank" rel="noopener">红鱼 DNS</a>也解析到了不正确的区域。</p>
+        <h2 id="Story"><a href="#Story" class="headerlink" title="Story"></a>Story</h2><p>　这一段时间看B站体验很差，速度不能跑满而且时不时卡住，让人抓狂。<br>　<a id="more"></a><br>　今天看到DoH（DNS over HTTPS）在Firefox（FF）得到支持得新闻，想起前几天调研Rust的时候提到Mozilla已经把FF核心从C++切换到RUST，据说性能很好？于是心血来潮装了一个Firefox Quantum。<br>　装好FF后，打开西贝斗鱼等网站，没感觉加载比Chrome多快，打开默认的DoH的，FF提供了一个Cloudflare的DoH Resolver（ <a href="https://cloudflare-dns.com/dns-query" target="_blank" rel="noopener">https://cloudflare-dns.com/dns-query</a> ），再测试一通发现B站的速度还是老样子甚至更差，谷歌了一下，发现FF提供了一个<code>about:networking</code>的小工具，可以查看很多网络相关的信息，其中的DNS一栏可以查看到DNS的host缓存，非常方便好用。<br>　<img src="Jietu20190304-192113@2x.jpg" alt><br>　打开调试窗口看到B站的CDN用的地址之一是<code>s1.hdslb.com</code>，在<code>about:networking</code>中找到缓存的ip地址并不是杭州的，打开DoH切换了Cloudflare和<a href="https://dns.rubyfish.cn/dns-query" target="_blank" rel="noopener">红鱼 DNS</a>也解析到了不正确的区域。</p>
 <h2 id="探索"><a href="#探索" class="headerlink" title="探索"></a>探索</h2><p>　之前并不了解如何检查DNS的解析结果，谷歌了一会儿，了解基本的dig命令用法，原来DNS的好坏是否适合只看ping速度是无用的，还要看解析的结果。<br>　国外的DNS比如谷歌、Cloudflare、Quad9，标榜关注用户隐私、安全、高速，但在解析国内的域名速度慢、被墙解析失败、CDN分配错误区域等问题；国内的DNS比如各运营商、114等，DNS污染和投毒等问题也让人恶心，但好在能满足日常使用尤其是CDN不会分配错误区域，解决这次看B站的问题。<br>　下面测试了几个主流的DNS提供商，解析B站的一个CDN地址<code>s1.hdslb.com</code>，使用<a href="https://www.ipip.net/ip.html" target="_blank" rel="noopener">IPIP</a>查询ip信息，例如：</p>
 <p>　* 阿里DNS 223.5.5.5</p>
 <p>　   <img src="Jietu20190304-194355@2x.jpg" alt><br>　   <img src="Jietu20190304-194530@2x.jpg" alt>
@@ -721,7 +721,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Fuxk-阿里DNS"><span class="nav-number">1.</span> <span class="nav-text">Fuxk 阿里DNS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Story"><span class="nav-number">1.1.</span> <span class="nav-text">Story</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#探索"><span class="nav-number">1.2.</span> <span class="nav-text">探索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论"><span class="nav-number">1.3.</span> <span class="nav-text">结论</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Story"><span class="nav-number">1.</span> <span class="nav-text">Story</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#探索"><span class="nav-number">2.</span> <span class="nav-text">探索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li></ol></div>
             
 
           </div>
