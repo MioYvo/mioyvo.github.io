@@ -1850,7 +1850,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #62206a;
+  background: #ff5393;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3132,7 +3132,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("http://papers.co/wallpaper/papers.co-mu85-mountain-silhouette-blue-morning-nature-35-3840x2160-4k-wallpaper.jpg");
+  background: url("https://papers.co/wallpaper/papers.co-mu85-mountain-silhouette-blue-morning-nature-35-3840x2160-4k-wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
