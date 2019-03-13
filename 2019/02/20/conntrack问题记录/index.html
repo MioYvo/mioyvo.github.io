@@ -109,7 +109,7 @@
 
 
   <meta name="description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
-<meta name="keywords" content="Linux,运维">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="conntrack问题记录">
 <meta property="og:url" content="http://allaboutmio.top/2019/02/20/conntrack问题记录/index.html">
@@ -117,7 +117,7 @@
 <meta property="og:description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tKfTcgy1g0cqh2orj6j30dq0c5mx4.jpg">
-<meta property="og:updated_time" content="2019-02-20T03:42:57.851Z">
+<meta property="og:updated_time" content="2019-03-13T12:54:14.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="conntrack问题记录">
 <meta name="twitter:description" content="记录一次nf_conntrack引发的服务器异常起因突然发现v2ray用不了了，登录服务器总是失败，多次尝试终于登上去，发现ping和docker pull都报operation not permitted，但用户是root，百思不得其解。 查看syslog发现大量报nf_conntrack:table full, dropping packet，询问得知前几天服务器被攻击过，于是上网找办法，查了">
@@ -451,11 +451,13 @@
 <li>程序的连接超时时间，120秒对于普通服务器来说太长了</li>
 </ul>
 </li>
-<li><code>net.netfilter.nf_conntrack_tcp_timeout_fin_wait</code>: 120 （默认）<ul>
+<li><p><code>net.netfilter.nf_conntrack_tcp_timeout_fin_wait</code>: 120 （默认）</p>
+<ul>
 <li><code>net.ipv4.tcp_fin_timeout</code> 默认 60 秒</li>
 </ul>
 </li>
-<li><code>net.netfilter.nf_conntrack_icmp_timeout</code>: 30 （默认）<ul>
+<li><p><code>net.netfilter.nf_conntrack_icmp_timeout</code>: 30 （默认）</p>
+<ul>
 <li>ping超时时间，30秒太长了</li>
 </ul>
 </li>
@@ -493,8 +495,6 @@
         <div class="post-tags">
           
             <a href="/tags/Linux/" rel="tag"># Linux</a>
-          
-            <a href="/tags/运维/" rel="tag"># 运维</a>
           
         </div>
       
@@ -591,7 +591,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -620,9 +620,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -651,6 +649,15 @@
                     
                   
                   <a href="mailto:liurusi.101@gmail.com" title="E-Mail &rarr; mailto:liurusi.101@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://ws3.sinaimg.cn/large/006tKfTcly1g11gixns36j30iq0owmy1.jpg" title="Wechat &rarr; https://ws3.sinaimg.cn/large/006tKfTcly1g11gixns36j30iq0owmy1.jpg" rel="noopener" target="_blank"><i class="fa fa-fw fa-weixin"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
